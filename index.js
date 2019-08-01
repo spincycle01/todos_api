@@ -7,10 +7,7 @@ const PORT = process.env.PORT || 3000;
 //root route
 app.get('/', (request, response) => {
   // response.send({ message: '.send from dumb object' });
-  response.json({ message: '.json hi from dumb object' });
-});
-app.get('/happy', (request, response) => {
-  response.send("I'm happy");
+  // response.json({ message: '.json hi from dumb object' });
 });
 
 app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
